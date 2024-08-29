@@ -1,0 +1,69 @@
+#root {
+  max-width: 1280px; /* Limits the maximum width of the root container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 2rem; /* Adds padding inside the container */
+  text-align: center; /* Centers text inside the container */
+}
+
+
+.logo {
+  height: 6em; /* Sets the height of the logo */
+  padding: 1.5em; /* Adds padding around the logo */
+  will-change: filter; /* Optimizes performance for filter changes */
+  transition: filter 300ms; /* Smooth transition for filter changes */
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa); /* Adds a shadow effect on hover */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa); /* Different shadow effect for elements with the 'react' class on hover */
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg); /* Starts the rotation at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Ends the rotation at 360 degrees */
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear; /* Applies the spin animation to the logo */
+  }
+}
+
+
+.card {
+  padding: 2em; /* Adds padding inside the card */
+}
+ห
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Example CSS for custom fade-out effect */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-out-active {
+  opacity: 1;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 400px; /* Set a fixed height for the carousel container */
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%; /* Ensure the image takes the full height of the container */
+  object-fit: cover; /* Cover the container without distortion */
+  border-radius: 0.5rem; /* Match the rounded corners */
+}
+
